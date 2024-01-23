@@ -1,11 +1,481 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Create landing page</title>
+    <!-- daisy and tailwind link start -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisy and tailwind link end -->
+
+    <!-- google font manrope link start  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <!-- google font manrope link end  -->
+    <style>
+        .font-family{
+            font-family: 'Manrope', sans-serif;
+        }
+        .hockey_image1, .hockey_image3 {
+            background-image: url('./Images/2.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            padding: 90px 70px 40px 40px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 10;
+        }
+        .z-index1{
+            position: absolute;
+            content: '';
+            background-color:#131318;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            border-radius: 10px;
+        }
+        .hockey_image2{
+            background-image: url('./Images/3.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: auto;
+            padding: 90px 70px 40px 40px;
+            border-radius: 10px;
+            position: relative;
+            z-index: 10;
+        }
+        .z-index2{
+            position: absolute;
+            content: '';
+            background-color:#131318;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            border-radius: 10px;
+        }
+        .hockey_image3{
+            background-image: url('./Images/4.png');
+            background-repeat: no-repeat;
+            background-size: cover;
+            width: 100%;
+            padding: 90px 70px 40px 40px;
+            position: relative;
+            
+            z-index: 10;
+        }
+        .z-index3{
+            position: absolute;
+            content: '';
+            background-color:#131318;
+            top: 0;
+            left: 0;
+            z-index: -2;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            border-radius: 10px;
+        } 
+        .email{
+            width: 100%; 
+            border-radius: 16px;
+            border: 1px solid rgba(19, 19, 24, 0.10);
+            padding: 50px 50px;
+        }
+        /* .text_area{
+            width: auto;
+            height: auto;
+            background-color: #f8f8f8;
+            border: 2px solid gray;
+        } */
+    </style>
 </head>
-<body>
+<body class="font-family">
+    <header class="w-4/5 mx-auto">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                  <div class="dropdown">
+                    <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                      <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" /></svg>
+                    </div>
+                    <ul tabindex="0" class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
+                        <li><a class="text-[#FF4240] font-bold">Home<a></li>
+                    <li><a class="font-bold">About</a></li>
+                    <li><a class="font-bold">Pages</a></li>
+                    <li><a class="font-bold">Blog</a></li>
+                    <li><a class="font-bold">Contact</a></li>
+                      </ul>
+                  </div>
+                  <a class="btn btn-ghost text-4xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240] font-extrabold text-4xl">’</span>s</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                  <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-[#FF4240] font-bold">Home</a></li>
+                    <li><a class="font-bold">About</a></li>
+                    <li><a class="font-bold">Pages</a></li>
+                    <li><a class="font-bold">Blog</a></li>
+                    <li><a class="font-bold">Contact</a></li>
+                  </ul>
+                </div>
+                <div class="navbar-end gap-4">
+                <img src="./Images/Frame (5).png" alt="">
+                  <a class="btn text-xl text-[#fff] font-bold bg-[#FF4240]">Button</a>
+                </div>
+              </div>
+
+        </nav>
+
+        <div class="carousel lg:h-[500px] h-auto w-full">
+            <div id="slide1" class="carousel-item relative w-full">
+              <img src="./Images/1.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                <a href="#slide4" class="btn btn-circle">❮</a> 
+                <a href="#slide2" class="btn btn-circle">❯</a>
+              </div>
+            </div> 
+            <div id="slide2" class="carousel-item relative w-full">
+              <img src="./Images/2.png" class="w-full" />
+              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">               
+                <a href="#slide3" class="btn btn-circle">❮</a>
+                <a href="#slide1" class="btn btn-circle">❯</a> 
+              </div>
+            </div> 
+          </div>
+          <br><br> <br>
+          <hr>
+           
+
+    </header>
+    
+
+    <main class="w-4/5 mx-auto">
+        <section class="mt-10">
+            <h2 class="text-4xl font-extrabold text-center text-[#131318]">Professional Hockeys Club</h2>
+            <p class=" lg:w-2/3 pt-4 border-1 text-center font-semibold m-auto">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
+            <br><br>
+            <hr>
+            <div class="flex lg:justify-around flex-col lg:flex-row mt-10">
+                
+                <div class="text-center my-4">
+                    <div class="flex justify-center">
+                        <div>                        
+                            <img class=" relative" src="./Images/Group 9.png" alt="">                       
+                            <h2 class="text-[#131318] font-extrabold text-3xl absolute -mt-[75px] ml-8 ">87%</h2>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-semibold pt-4 pb-2 text-[#131318]">Training Ground</h2>
+                    <p>competition of ice hockey in which participants are paid to.</p>
+                </div>
+                <div class="text-center  my-4">
+                    <div class="flex justify-center ">
+                        <div>                        
+                            <img class=" relative" src="./Images/Group 9 (1).png" alt="">                       
+                            <h2 class="text-[#131318] font-extrabold text-3xl absolute -mt-[75px] ml-8 ">95%</h2>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-semibold pt-4 pb-2 text-[#131318]">Training Ground</h2>
+                    <p>competition of ice hockey in which participants are paid to.</p>
+                </div>
+                <div class="text-center  my-4">
+                    <div class="flex justify-center">
+                        <div>                        
+                            <img class=" relative" src="./Images/Group 9 (2).png" alt="">                       
+                            <h2 class="text-[#131318] font-extrabold text-3xl absolute -mt-[75px] ml-8 ">90%</h2>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-semibold pt-4 pb-2 text-[#131318]">Training Ground</h2>
+                    <p>competition of ice hockey in which participants are paid to.</p>
+                </div>
+                <div class="text-center  my-4">
+                    <div class="flex justify-center">
+                        <div>                        
+                            <img class=" relative" src="./Images/Group 9 (3).png" alt="">                       
+                            <h2 class="text-[#131318] font-extrabold text-3xl absolute -mt-[75px] ml-8 ">80%</h2>
+                        </div>
+                    </div>
+                    <h2 class="text-xl font-semibold pt-4 pb-2 text-[#131318]">Training Ground</h2>
+                    <p>competition of ice hockey in which participants are paid to.</p>
+                </div>
+            </div>
+                
+        </section>
+        <br><br><br>
+            <hr>
+
+        <section class="mt-6 mt">
+            <h2 class="text-4xl font-extrabold text-center text-[#131318]">Program Sections</h2>
+            <p class=" lg:w-2/4 pt-4 border-1 text-center font-semibold m-auto">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
+            <div class="grid grid-cols-2 gap-2 mt-9">
+                <div class="hockey_image1 flex-1 col-span-1">
+                    <div class="z-index1"></div>
+                    <h4 class="text-3xl  text-[#fff] font-extrabold text[#FFF]">Junior Program</h4>
+                    <p class="font-semibold mt-3 text-[#fff]">Professional ice hockey (hockey) is the competition of ice hockey in which </p>
+                    <button class="btn mt-5 border-0 bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
+                </div>
+                <div class="hockey_image2 flex-1 col-span-1">
+                    <div class="z-index2"></div>
+                    <h4 class="text-3xl text-[#fff] font-extrabold text[#FFF]">Junior Program</h4>
+                    <p class="font-semibold mt-3 text-[#fff]">Professional ice hockey (hockey) is the competition of ice hockey in which </p>
+                    <button class="btn mt-5 border-0 bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
+                </div>
+                <div class="hockey_image3 row-span-2 col-span-2">
+                    <div class="z-index3"></div>
+                    <h4 class="text-3xl font-extrabold text-[#FFFFFF]">Junior Program</h4>
+                    <p class="font-semibold mt-3 text-[#fff]">Professional ice hockey (hockey) is the competition of ice hockey in which </p>
+                    <button class="btn mt-5 border-0 bg-[#FF4240] text-[#FFFFFF]">Register Now!</button>
+                </div>
+            </div>
+        </section>
+
+        <br><br>
+        <hr>
+
+        <section class="mt-5">
+            <div>
+                <h2 class="text-4xl font-extrabold text-center text-[#131318]">Our New Products</h2>
+                <p class=" lg:w-3/4 pt-4 border-1 text-center font-semibold m-auto mb-4">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
+            </div>
+
+            <div>
+                <div class="flex w-[55%] shadow-lg p-3 rounded-md">
+                    <img src="./Images/5.png" alt="">
+    
+                            <div>
+                                <div class="flex">
+                                    <div class="flex">
+                                        <div class="flex  justify-center items-center gap-2" >
+                                        <img class="pl-2" src="./Images/Frame1.png" alt="">
+                                        <h5 class="font-semibold inline text-[#989899]">5.0</h5>                                              </div>
+                                        </div>
+                
+                                        <div class=" flex justify-center ">
+                                        <img class="pl-3" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">20</h5>
+                                        </div>
+                
+                                        <div class=" flex justify-center items-center  ">
+                                        <img class="pl-3" src="./Images/Frame (1).png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">200</h5>
+                                        </div>
+                                     </div>
+                                     <div class=" pl-3">
+                                        <h2 class="text-xl mt-4 font-extrabold text-[#131318]">World Cup Flags Football</h2>
+                                        <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
+                                        <div class="flex gap-10 pt-4">
+                                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                                            <div class="flex">
+                                                <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
+                                                <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
+                                            </div>
+                                        </div> 
+            </div>
+            
+                                   
+           
+                 
+            
+            
+                                                      
+                    
+        </section>
+        <br><br><br> <hr>
+
+        <section class="mt-14">
+            <h2 class="text-4xl font-extrabold text-center text-[#131318]">Clients Question</h2>
+            <p class=" lg:w-2/3 pt-4 border-1 text-center font-semibold m-auto mb-4">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
+            <div class="lg:flex gap-6 mt-10">
+                <img class="flex-1 w-36 h-[450px]" src="./Images/11.png" alt="">
+                <div class="flex-1">
+                    <div class="collapse collapse-plus ">
+                        <input type="radio" name="my-accordion-3" checked="checked" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Our Equipment
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. </p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Hockey Training
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Private Lessons
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Ski Touring
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Booking
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                      <hr>
+                      <div class="collapse collapse-plus">
+                        <input type="radio" name="my-accordion-3" /> 
+                        <div class="collapse-title text-xl font-medium">
+                            Pricings
+                        </div>
+                        <div class="collapse-content"> 
+                          <p>hello</p>
+                        </div>
+                      </div>
+                </div>
+            </div>
+            
+
+        </section>
+        <br><br> <hr>
+
+        <section >
+            <h2 class="text-4xl text-center mt-4 font-extrabold text-[#131318]">Get In Touch</h2>
+            <p class=" lg:w-[600px] pt-4 text-center font-semibold m-auto mb-4">Professional ice hockey (hockey) is the competition of ice hockey to play. Professional competition began in North America </p>
+            <br><hr>
+            <div class="lg:flex gap-7">
+                <div class="grid gap-6 px-1 email mt-14 py-6">
+                    <div class="lg:w-[350px] w-[auto] px-8 py-10 m-auto bg-[#F8FDF0] rounded-md">
+                        <img src="./Images/Group 1171275317.png" alt="">
+                        <p class="pt-6">
+                            <span class="text-[#989899]">Phone Number :</span> <br>
+                            <span class="text-xl mt-3 font-extrabold">(+62) 123-321-543</span>
+                        </p>
+    
+                    </div>
+                    <div class="w-[350px] px-8 py-10 m-auto bg-[#FFFCEF] rounded-md">
+                        <img src="./Images/Group 1171275318.png" alt="">
+                        <p class="pt-6">
+                            <span class="text-[#989899]">Email :</span> <br>
+                            <span class="text-xl mt-3 font-extrabold"> 
+                                hockeys@support.com</span>
+                        </p>
+    
+                    </div>
+                    <div class="w-[350px] px-8 py-10 m-auto bg-[#EFF5FE] rounded-md">
+                        <img src="./Images/Group 1171275321.png" alt="">
+                        <p class="pt-6 space-y-2">
+                            <span class="text-[#989899] ">Location : </span> <br>
+                            <span class="text-xl mt-3 font-extrabold">
+                                152/1 Mohakhali Wireless Gate</span>
+                        </p>
+    
+                    </div>
+                </div>
+
+
+<div class="flex justify-between gap-6 mt-14">
+    <div>
+        <label class=" block" for="name" > <span class="text-[#131318] mt-2 font-bold text-xl" >Your Name</span> <br>
+            <input class="w-[300px] mt-2 h-[55px] pt-3 pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your full name">
+        </label>
+        
+        <label for="name" class="mt-6 block" > <span class="text-[#131318] font-bold text-xl" >Subject</span>  <br>
+            <input class="w-[300px] mt-2 h-[55px] pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Your Subject">
+        </label>
+       </div>
+       <div>
+        <label for="name" class="" > <span class="text-[#131318] font-bold text-xl" >Your Email</span>  <br>
+            <input class="w-[300px] mt-2 h-[55px] pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your email">
+        </label>
+        <label for="name" class="mt-6 block" > <span class="text-[#131318] pt-3 font-bold text-xl" >Phone Number</span>  <br>
+            <input class="w-[300px] h-[55px] mt-2 pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your Phone">
+        </label>
+        
+        
+    </div>
+    
+</div>
+</div>
+        
+        <div class="w-[100%] mt-8 py-8 space-y-3 bg-[#f8f8f8]">
+            <h4 class="text-2xl text-[#131318] text-center font-extrabold">Social Media</h4>
+            <div class="flex justify-center">
+                <img src="./Images/Social.png">
+            </div>
+        </div>
+            
+
+
+        </section>
+
+
+    </main>
+
+    <footer class="footer p-10 mt-20 bg-[#131318] text-neutral-content">
+        <div class="footer p-10 w-4/5 mx-auto bg-[#131318] lg:flex lg:justify-between">
+            <nav>
+                <header class=" text-2xl font-extrabold text-[#FFFFFF]">Get In Touch</header> 
+                <p class="w-80">competition of ice hockey in which participants are paid to competition of ice hockey in  paid to.</p>
+                <div class="flex gap-3 mt-3">
+                    <img src="./Images/Frame (3).png" alt="">
+                    <p>hockeys@support.com</p>
+                </div>
+                <div class="flex gap-3">
+                    <img src="./Images/Frame (4).png" alt="">
+                    <p>(+62) 123-321-543</p>
+                </div>
+              </nav> 
+              <nav>
+                <header class=" text-xl font-bold text-[#FFFFFF]">Company</header>  
+                <a class="link link-hover">About us</a>
+                <a class="link link-hover">Leadership</a>
+                <a class="link link-hover">Careers</a>
+                <a class="link link-hover">News & Article</a>
+                <a class="link link-hover">Legal Notice</a>
+              </nav> 
+              <nav>
+                <header class=" text-xl font-bold text-[#FFFFFF]">Support</header> 
+                <a class="link link-hover">Help Center</a>
+                <a class="link link-hover">FAQ</a>
+                <a class="link link-hover">Ticket Support</a>
+                <a class="link link-hover">Contact Us</a>
+              </nav>
+              <nav>
+                <header class=" text-xl font-bold text-[#FFFFFF]">Services</header> 
+                <a class="link link-hover">Academy</a>
+                <a class="link link-hover">Group Lesson</a>
+                <a class="link link-hover">Private Lesson</a>
+                <a class="link link-hover">Hockeys for kids</a>
+                <a class="link link-hover">Hockeys for Adult</a>
+              </nav>
+        </div>
+        
+      </footer>
+
+
+
     
 </body>
 </html>
