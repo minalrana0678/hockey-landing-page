@@ -18,71 +18,7 @@
         .font-family{
             font-family: 'Manrope', sans-serif;
         }
-        .hockey_image1{
-            background-image: url('./Images/2.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            padding: 90px 70px 40px 40px;
-            border-radius: 10px;
-            position: relative;
-            z-index: 10;
-        }
-        .z-index1{
-            position: absolute;
-            content: '';
-            background-color:#131318;
-            top: 0;
-            left: 0;
-            z-index: -2;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-            border-radius: 10px;
-        }
-        .hockey_image2{
-            background-image: url('./Images/3.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: auto;
-            padding: 90px 70px 40px 40px;
-            border-radius: 10px;
-            position: relative;
-            z-index: 10;
-        }
-        .z-index2{
-            position: absolute;
-            content: '';
-            background-color:#131318;
-            top: 0;
-            left: 0;
-            z-index: -2;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-            border-radius: 10px;
-        }
-        .hockey_image3{
-            background-image: url('./Images/4.png');
-            background-repeat: no-repeat;
-            background-size: cover;
-            width: 100%;
-            height: 100%;
-            padding: 90px 70px 40px 40px;
-            position: relative;
-            z-index: 10;
-        }
-        .z-index3{
-            position: absolute;
-            content: '';
-            background-color:#131318;
-            top: 0;
-            left: 0;
-            z-index: -2;
-            width: 100%;
-            height: 100%;
-            opacity: 0.3;
-            border-radius: 10px;
-        } 
+        
         
         .email{
             width:auto;
@@ -134,7 +70,7 @@
 
         </nav>
 
-        <div class="carousel lg:h-[500px] h-auto w-full">
+        <div class="carousel relative lg:h-[500px] h-auto w-full">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./Images/1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -150,14 +86,17 @@
               </div>
             </div> 
           </div>
-          <br><br> <br>
-          <hr>
+         <div class="bg-[#131318] lg:w-[500px] w-auto  rounded-lg lg:absolute mt-5 lg:top-[350px] right-40 lg:p-8 p-2">
+            <h2 class=" text-2xl text-center text-white font-extrabold">Meet all the heroes the from</h2>
+            <p class="font-medium text-center mt-2 text-[#ffffff99]">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play.</p>
+         </div>
            
 
     </header>
-    
+    <br><br> <br>
+    <hr>
 
-    <main class="w-[90%] mx-auto">i
+    <main class="w-[90%] mx-auto">
 
         <!-- section number one -->
         <section class="mt-10">
@@ -646,9 +585,9 @@
 
 
     </section>
-
+    <br><br> <hr>
     </main>
-
+   
     <footer class="footer p-10 mt-20 bg-[#131318]">
         <div class="footer lg:p-10  flex lg:flex-row flex-col justify-around space-x-10 lg:w-4/5 w-[100%] mx-auto  ">
             <div class=" mt-7 -ml-16">
