@@ -18,7 +18,7 @@
         .font-family{
             font-family: 'Manrope', sans-serif;
         }
-        .hockey_image1, .hockey_image3 {
+        .hockey_image1{
             background-image: url('./Images/2.png');
             background-repeat: no-repeat;
             background-size: cover;
@@ -66,9 +66,9 @@
             background-repeat: no-repeat;
             background-size: cover;
             width: 100%;
+            height: 100%;
             padding: 90px 70px 40px 40px;
             position: relative;
-            
             z-index: 10;
         }
         .z-index3{
@@ -83,22 +83,23 @@
             opacity: 0.3;
             border-radius: 10px;
         } 
+        
         .email{
-            width: 100%; 
-            border-radius: 16px;
-            border: 1px solid rgba(19, 19, 24, 0.10);
-            padding: 50px 50px;
+            width:auto;
+            height: auto;
+            border: 1px solid #0d0d121a;
+            border-radius: 12px;
         }
-        /* .text_area{
+        .text_area{
             width: auto;
             height: auto;
             background-color: #f8f8f8;
-            border: 2px solid gray;
-        } */
+            border: 2px solid #0d0d121a;
+        }
     </style>
 </head>
 <body class="font-family">
-    <header class="w-4/5 mx-auto">
+    <header class="w-[90%] mx-auto">
         <nav>
             <div class="navbar bg-base-100">
                 <div class="navbar-start">
@@ -114,7 +115,7 @@
                     <li><a class="font-bold">Contact</a></li>
                       </ul>
                   </div>
-                  <a class="btn btn-ghost text-4xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240] font-extrabold text-4xl">’</span>s</a>
+                  <a class="btn btn-ghost lg:text-4xl text-2xl font-extrabold text-[#131318]">Hockey<span class="text-[#FF4240] font-extrabold text-4xl">’</span>s</a>
                 </div>
                 <div class="navbar-center hidden lg:flex">
                   <ul class="menu menu-horizontal px-1">
@@ -126,7 +127,7 @@
                   </ul>
                 </div>
                 <div class="navbar-end gap-4">
-                <img src="./Images/Frame (5).png" alt="">
+                <img class="lg:block hidden" src="./Images/Frame (5).png" alt="">
                   <a class="btn text-xl text-[#fff] font-bold bg-[#FF4240]">Button</a>
                 </div>
               </div>
@@ -156,13 +157,15 @@
     </header>
     
 
-    <main class="w-4/5 mx-auto">
+    <main class="w-[90%] mx-auto">i
+
+        <!-- section number one -->
         <section class="mt-10">
             <h2 class="text-4xl font-extrabold text-center text-[#131318]">Professional Hockeys Club</h2>
             <p class=" lg:w-2/3 pt-4 border-1 text-center font-semibold m-auto">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
             <br><br>
             <hr>
-            <div class="flex lg:justify-around flex-col lg:flex-row mt-10">
+            <div class="flex justify-around flex-col lg:flex-row mt-10">
                 
                 <div class="text-center my-4">
                     <div class="flex justify-center">
@@ -207,13 +210,15 @@
             </div>
                 
         </section>
+        
         <br><br><br>
             <hr>
 
+             <!-- section number two -->
         <section class="mt-6 mt">
             <h2 class="text-4xl font-extrabold text-center text-[#131318]">Program Sections</h2>
             <p class=" lg:w-2/4 pt-4 border-1 text-center font-semibold m-auto">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
-            <div class="grid grid-cols-2 gap-2 mt-9">
+            <div class="grid lg:grid-cols-2 grid-cols-1 gap-2 mt-9">
                 <div class="hockey_image1 flex-1 col-span-1">
                     <div class="z-index1"></div>
                     <h4 class="text-3xl  text-[#fff] font-extrabold text[#FFF]">Junior Program</h4>
@@ -238,15 +243,54 @@
         <br><br>
         <hr>
 
+         <!-- section number three -->
         <section class="mt-5">
             <div>
                 <h2 class="text-4xl font-extrabold text-center text-[#131318]">Our New Products</h2>
                 <p class=" lg:w-3/4 pt-4 border-1 text-center font-semibold m-auto mb-4">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
             </div>
 
-            <div>
-                <div class="flex w-[55%] shadow-lg p-3 rounded-md">
-                    <img src="./Images/5.png" alt="">
+           <div class="grid gap-4 lg:grid-cols-2 grid-cols-1">
+           
+                <div class=" lg:flex shadow-lg p-3 rounded-md">
+                    <img class=" lg:w-[auto] w-[100%] mb-2" src="./Images/5.png" alt="">
+                            <div>
+                                <div class="flex">
+                                    <div class="flex">
+                                        <div class="flex  justify-center items-center gap-2" >
+                                        <img class="pl-2 " src="./Images/Frame1.png" alt="">
+                                        <h5 class="font-semibold inline text-[#989899]">5.0</h5>                                              </div>
+                                        </div>
+                
+                                        <div class=" flex justify-center ">
+                                        <img class="pl-3" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">20</h5>
+                                        </div>
+                
+                                        <div class=" flex justify-center items-center  ">
+                                        <img class="pl-3" src="./Images/Frame (1).png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">200</h5>
+                                        </div>
+                                     </div>
+                                     <div class=" pl-3">
+                                        <h2 class="text-xl mt-4 font-extrabold text-[#131318]">World Cup Flags Football</h2>
+                                        <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
+                                        <div class="lg:flex space-y-2 gap-10 pt-4">
+                                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                                            <div class="flex">
+                                                <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
+                                                <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                            </div>
+                        
+                    
+
+            
+                <div class="lg:flex shadow-lg p-3 rounded-md">
+                    <img class=" lg:w-[auto] w-[100%] mb-2" src="./Images/6.png" alt="">
     
                             <div>
                                 <div class="flex">
@@ -269,15 +313,171 @@
                                      <div class=" pl-3">
                                         <h2 class="text-xl mt-4 font-extrabold text-[#131318]">World Cup Flags Football</h2>
                                         <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
-                                        <div class="flex gap-10 pt-4">
+                                        <div class="lg:flex gap-10 pt-4">
                                             <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
                                             <div class="flex">
                                                 <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
                                                 <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
                                             </div>
                                         </div> 
-            </div>
+                                    </div>
+                                </div>
+                            </div>
+                        
+       
             
+                <div class="lg:flex w-[100%] shadow-lg p-3 rounded-md">
+                    <img class=" lg:w-[auto] w-[100%] mb-2" src="./Images/7.png" alt="">
+    
+                            <div>
+                                <div class="flex">
+                                    <div class="flex">
+                                        <div class="flex  justify-center items-center gap-2" >
+                                        <img class="pl-2" src="./Images/Frame1.png" alt="">
+                                        <h5 class="font-semibold inline text-[#989899]">5.0</h5>                                              </div>
+                                        </div>
+                
+                                        <div class=" flex justify-center ">
+                                        <img class="pl-3" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">20</h5>
+                                        </div>
+                
+                                        <div class=" flex justify-center items-center  ">
+                                        <img class="pl-3" src="./Images/Frame (1).png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">200</h5>
+                                        </div>
+                                     </div>
+                                     <div class=" pl-3">
+                                        <h2 class="text-xl mt-4 font-extrabold text-[#131318]">Cap For Hockeys</h2>
+                                        <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
+                                        <div class="lg:flex gap-10 pt-4">
+                                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                                            <div class="flex">
+                                                <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
+                                                <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        
+        
+           
+                <div class="lg:flex w-[100%] shadow-lg p-3 rounded-md">
+                    <img class=" lg:w-[auto] w-[100%] mb-2" src="./Images/8.png" alt="">
+    
+                            <div>
+                                <div class="flex">
+                                    <div class="flex">
+                                        <div class="flex  justify-center items-center gap-2" >
+                                        <img class="pl-2" src="./Images/Frame1.png" alt="">
+                                        <h5 class="font-semibold inline text-[#989899]">5.0</h5>                                              </div>
+                                        </div>
+                
+                                        <div class=" flex justify-center ">
+                                        <img class="pl-3" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">20</h5>
+                                        </div>
+                
+                                        <div class=" flex justify-center items-center  ">
+                                        <img class="pl-3" src="./Images/Frame (1).png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">200</h5>
+                                        </div>
+                                     </div>
+                                     <div class=" pl-3">
+                                        <h2 class="text-xl mt-4 font-extrabold text-[#131318]">World Cup Flags Football</h2>
+                                        <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
+                                        <div class="lg:flex gap-10 pt-4">
+                                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                                            <div class="flex">
+                                                <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
+                                                <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        
+        
+            
+                <div class="lg:flex w-[100%] shadow-lg p-3 rounded-md">
+                    <img class=" lg:w-[auto] w-[100%] mb-2" src="./Images/9.png" alt="">
+    
+                            <div>
+                                <div class="flex">
+                                    <div class="flex">
+                                        <div class="flex  justify-center items-center gap-2" >
+                                        <img class="pl-2" src="./Images/Frame1.png" alt="">
+                                        <h5 class="font-semibold inline text-[#989899]">5.0</h5>                                              </div>
+                                        </div>
+                
+                                        <div class=" flex justify-center ">
+                                        <img class="pl-3" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">20</h5>
+                                        </div>
+                
+                                        <div class=" flex justify-center items-center  ">
+                                        <img class="pl-3" src="./Images/Frame (1).png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">200</h5>
+                                        </div>
+                                     </div>
+                                     <div class=" pl-3">
+                                        <h2 class="text-xl mt-4 font-extrabold text-[#131318]">World Cup Flags Football</h2>
+                                        <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
+                                        <div class="lg:flex gap-10 pt-4">
+                                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                                            <div class="flex">
+                                                <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
+                                                <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        
+       
+            
+                <div class="lg:flex w-[100%] shadow-lg p-3 rounded-md">
+                    <img class=" lg:w-[auto] w-[100%] mb-2" src="./Images/10.png" alt="">
+    
+                            <div>
+                                <div class="flex">
+                                    <div class="flex">
+                                        <div class="flex  justify-center items-center gap-2" >
+                                        <img class="pl-2" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold inline text-[#989899]">5.0</h5>                                              </div>
+                                        </div>
+                
+                                        <div class=" flex justify-center ">
+                                        <img class="pl-3" src="./Images/Frame.png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">20</h5>
+                                        </div>
+                
+                                        <div class=" flex justify-center items-center  ">
+                                        <img class="pl-3" src="./Images/Frame (1).png" alt="">
+                                        <h5 class="font-semibold pl-2 text-[#989899]">200</h5>
+                                        </div>
+                                     </div>
+                                     <div class=" pl-3">
+                                        <h2 class="text-xl mt-4 font-extrabold text-[#131318]">World Cup Flags Football</h2>
+                                        <p class="pt-4 text-[#989899]  font-semibold">hockey in which participants are paid to play ice hockey in which.</p>
+                                        <div class="lg:flex gap-10 pt-4">
+                                            <h3 class="text-[#FF4240] font-extrabold">Price - $22.00</h3>
+                                            <div class="flex">
+                                                <img class="text-[#989899] font-bold" src="./Images/Frame (2).png" alt="">
+                                                <p class="text-[#989899]  font-bold">Delivery Fee : Free</p>
+                                            </div>
+                                        </div> 
+                                    </div>
+                                </div>
+                            </div>
+                        
+
+                            
+            
+            
+
+           </div>
                                    
            
                  
@@ -288,11 +488,12 @@
         </section>
         <br><br><br> <hr>
 
+         <!-- section number four-->
         <section class="mt-14">
             <h2 class="text-4xl font-extrabold text-center text-[#131318]">Clients Question</h2>
             <p class=" lg:w-2/3 pt-4 border-1 text-center font-semibold m-auto mb-4">Professional ice hockey (hockey) is the competition of ice hockey in which participants are paid to play. Professional competition began in North America </p>
             <div class="lg:flex gap-6 mt-10">
-                <img class="flex-1 w-36 h-[450px]" src="./Images/11.png" alt="">
+                <img class="flex-1 lg:w-36 lg:h-[450px]" src="./Images/11.png" alt="">
                 <div class="flex-1">
                     <div class="collapse collapse-plus ">
                         <input type="radio" name="my-accordion-3" checked="checked" /> 
@@ -360,13 +561,14 @@
         </section>
         <br><br> <hr>
 
+         <!-- section number five -->
         <section >
             <h2 class="text-4xl text-center mt-4 font-extrabold text-[#131318]">Get In Touch</h2>
             <p class=" lg:w-[600px] pt-4 text-center font-semibold m-auto mb-4">Professional ice hockey (hockey) is the competition of ice hockey to play. Professional competition began in North America </p>
             <br><hr>
-            <div class="lg:flex gap-7">
-                <div class="grid gap-6 px-1 email mt-14 py-6">
-                    <div class="lg:w-[350px] w-[auto] px-8 py-10 m-auto bg-[#F8FDF0] rounded-md">
+            <div class="lg:flex justify-center gap-20">
+                <div class="grid gap-6 py-5 pl-5 pr-5 email mt-14 ">
+                    <div class=" w-[100%] lg:px-8 pl-4 py-10 m-auto bg-[#F8FDF0] rounded-md">
                         <img src="./Images/Group 1171275317.png" alt="">
                         <p class="pt-6">
                             <span class="text-[#989899]">Phone Number :</span> <br>
@@ -374,46 +576,50 @@
                         </p>
     
                     </div>
-                    <div class="w-[350px] px-8 py-10 m-auto bg-[#FFFCEF] rounded-md">
+                    <div class="lg:w-[350px] w-[100%] lg:px-8 pl-4 py-10 m-auto bg-[#FFFCEF] rounded-md">
                         <img src="./Images/Group 1171275318.png" alt="">
                         <p class="pt-6">
                             <span class="text-[#989899]">Email :</span> <br>
                             <span class="text-xl mt-3 font-extrabold"> 
-                                hockeys@support.com</span>
+                            hockeys@support.com</span>
                         </p>
     
                     </div>
-                    <div class="w-[350px] px-8 py-10 m-auto bg-[#EFF5FE] rounded-md">
-                        <img src="./Images/Group 1171275321.png" alt="">
+                    <div class="lg:w-[350px] w-[100%] lg:px-8 pl-4 py-10 m-auto bg-[#EFF5FE] rounded-md">
+                        <img class="flex justify-end" src="./Images/Group 1171275321.png">
                         <p class="pt-6 space-y-2">
                             <span class="text-[#989899] ">Location : </span> <br>
                             <span class="text-xl mt-3 font-extrabold">
-                                152/1 Mohakhali Wireless Gate</span>
-                        </p>
-    
+                            152/1 Mohakhali Wireless Gate</span>
+                            </p>
                     </div>
                 </div>
 
 
-<div class="flex justify-between gap-6 mt-14">
-    <div>
-        <label class=" block" for="name" > <span class="text-[#131318] mt-2 font-bold text-xl" >Your Name</span> <br>
-            <input class="w-[300px] mt-2 h-[55px] pt-3 pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your full name">
-        </label>
-        
-        <label for="name" class="mt-6 block" > <span class="text-[#131318] font-bold text-xl" >Subject</span>  <br>
-            <input class="w-[300px] mt-2 h-[55px] pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Your Subject">
-        </label>
-       </div>
-       <div>
-        <label for="name" class="" > <span class="text-[#131318] font-bold text-xl" >Your Email</span>  <br>
-            <input class="w-[300px] mt-2 h-[55px] pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your email">
-        </label>
-        <label for="name" class="mt-6 block" > <span class="text-[#131318] pt-3 font-bold text-xl" >Phone Number</span>  <br>
-            <input class="w-[300px] h-[55px] mt-2 pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your Phone">
-        </label>
-        
-        
+<div class="mt-14">
+    <div class="flex lg:flex-row flex-col w-[100%] justify-between gap-6">
+        <div>
+            <label class=" block" for="name" > <span class="text-[#131318] mt-2 font-bold text-xl" >Your Name</span> <br>
+                <input class="lg:w-[300px] w-[100%] mt-2 h-[55px] pt-3 pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your full name">
+            </label>
+            
+            <label for="name" class="mt-6 block" > <span class="text-[#131318] font-bold text-xl" >Subject</span>  <br>
+                <input class="lg:w-[300px] w-[100%] mt-2 h-[55px] pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Your Subject">
+            </label>
+           </div>
+           <div>
+            <label for="name" class="" > <span class="text-[#131318] font-bold text-xl" >Your Email</span>  <br>
+                <input class=" lg:w-[300px] w-[100%] mt-2 h-[55px] pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your email">
+            </label>
+            <label for="name" class="mt-6 block" > <span class="text-[#131318] pt-3 font-bold text-xl" >Phone Number</span>  <br>
+                <input class="lg:w-[300px] w-[100%] h-[55px] mt-2 pl-4 bg-[#f8f8f8] rounded-lg" type="text" placeholder="Enter your Phone">
+            </label>
+        </div>
+    </div>
+    <div class="mt-8">
+        <h3 class="text-[#131318] font-bold pb-3 text-xl">Message</h3>
+        <textarea class="border-1  rounded-xl border-[#0d0d121a] border-solid lg:h-[395px] h-[250px] pt-6 pl-6 w-[100%] bg-[#f8f8f8]" placeholder="Write your message"></textarea>
+        <button class="btn mt-4 bg-[#FF4240] w-[100%] text-[#ffffff] text-xl font-bold">Send Message</button>
     </div>
     
 </div>
@@ -428,48 +634,57 @@
             
 
 
-        </section>
-
+    </section>
 
     </main>
 
-    <footer class="footer p-10 mt-20 bg-[#131318] text-neutral-content">
-        <div class="footer p-10 w-4/5 mx-auto bg-[#131318] lg:flex lg:justify-between">
-            <nav>
-                <header class=" text-2xl font-extrabold text-[#FFFFFF]">Get In Touch</header> 
-                <p class="w-80">competition of ice hockey in which participants are paid to competition of ice hockey in  paid to.</p>
-                <div class="flex gap-3 mt-3">
-                    <img src="./Images/Frame (3).png" alt="">
-                    <p>hockeys@support.com</p>
-                </div>
-                <div class="flex gap-3">
-                    <img src="./Images/Frame (4).png" alt="">
-                    <p>(+62) 123-321-543</p>
-                </div>
-              </nav> 
-              <nav>
-                <header class=" text-xl font-bold text-[#FFFFFF]">Company</header>  
-                <a class="link link-hover">About us</a>
-                <a class="link link-hover">Leadership</a>
-                <a class="link link-hover">Careers</a>
-                <a class="link link-hover">News & Article</a>
-                <a class="link link-hover">Legal Notice</a>
-              </nav> 
-              <nav>
-                <header class=" text-xl font-bold text-[#FFFFFF]">Support</header> 
-                <a class="link link-hover">Help Center</a>
-                <a class="link link-hover">FAQ</a>
-                <a class="link link-hover">Ticket Support</a>
-                <a class="link link-hover">Contact Us</a>
-              </nav>
-              <nav>
-                <header class=" text-xl font-bold text-[#FFFFFF]">Services</header> 
-                <a class="link link-hover">Academy</a>
-                <a class="link link-hover">Group Lesson</a>
-                <a class="link link-hover">Private Lesson</a>
-                <a class="link link-hover">Hockeys for kids</a>
-                <a class="link link-hover">Hockeys for Adult</a>
-              </nav>
+    <footer class="footer p-10 mt-20 bg-[#131318]">
+        <div class="footer lg:p-10 flex lg:flex-row flex-col justify-around space-x-10 lg:w-4/5 w-[100%] mx-auto  ">
+            <div>
+                <nav class="text-center">
+                    <header class=" text-2xl font-extrabold text-[#FFFFFF] ">Get In Touch</header> 
+                    <p class="lg:w-[320px] w-[90%] m-auto text-[#FFFFFF99]">competition of ice hockey in which participants are paid to competition of ice hockey in  paid</p>
+                    <div class="flex justify-center gap-3 mt-3">
+                        <img src="./Images/Frame (3).png" alt="">
+                        <p class="text-[#FFFFFF99]">hockeys@support.com</p>
+                    </div>
+                    <div class="flex justify-center mt-2 gap-3">
+                        <img src="./Images/Frame (4).png" alt="">
+                        <p class="text-[#FFFFFF99]">(+62) 123-321-543</p>
+                    </div>
+                  </nav>
+            </div>
+            <div class="flex gap-14 pr-7 items-center justify-evenly">
+                <nav class="text-center -ml-5 w-[100%] m-auto">
+                    <header class=" text-xl font-bold text-[#FFFFFF]">Company</header>  
+                    <a class="link link-hover text-[#FFFFFF99]">About us</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Leadership</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Careers</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">News & Article</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Legal Notice</a><br>
+                  </nav> 
+                  <nav class="text-center m-auto">
+                    <header class="text-xl font-bold text-[#FFFFFF]">Support</header> 
+                    <a class="link link-hover text-[#FFFFFF99]">Help Center</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">FAQ</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Support</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Contact Us</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Create</a><br>
+                  </nav>
+            </div>
+            
+               
+             <div class="text-center m-auto ">
+                <nav class="text-center m-auto">
+                    <header class=" text-xl text-center font-bold text-[#FFFFFF]">Services</header> 
+                    <a class="link link-hover text-[#FFFFFF99]">Academy</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Group Lesson</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Private Lesson</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Hockeys for kids</a><br>
+                    <a class="link link-hover text-[#FFFFFF99]">Hockeys for Adult</a><br>
+                  </nav>
+             </div>
+              
         </div>
         
       </footer>
